@@ -33,7 +33,7 @@ function About() {
         About Me
       </h2>
       <div>
-        another text for the body of the about me. This will be a long text so here it goes; asdfasfsafsdafasd asfsaf dsaf asfsadf sdadf asdf asdfsf dsaf saasd dsf asdfsdaf asfsda fdsaf salfjasfkojasfdsa kl fsalf nlsnf sadfn sdof osanf 
+        another text for the body of the about me. This will be a long text so here it goes; asdfasfsafsdafasd asfsaf dsaf asfsadf sdadf asdf asdfsf dsaf saasd dsf asdfsdaf asfsda fdsaf salfjasfkojasfdsa kl fsalf nlsnf sadfn sdof osanf
       </div>
     </div>
   );
