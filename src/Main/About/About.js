@@ -30,7 +30,7 @@ function About() {
       </div>
       <div id = "stripe"/>
       <h2 id ='mainTitle'>
-        Skill
+        About Me
       </h2>
     </div>
   );
