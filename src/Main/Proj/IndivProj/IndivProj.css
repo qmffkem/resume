@@ -1,0 +1,22 @@
+proj {
+  background-color: #3A3535;
+  padding: 20px;
+  border-radius: 10px;
+  color: #f4f4f4;
+  max-width: 984px;
+}
+
+
+#title {
+
+}
+
+#year {
+
+}
+
+
+.projHead {
+  display:flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,11 @@
+.proj {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#mainTitle {
+  width: 984px;
+  font-weight: normal;
+}
