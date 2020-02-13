@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Main from './Main/Main';
 
@@ -10,11 +9,4 @@ class App extends Component{
     );
   }
 }
-
-// function App() {
-//   return(
-//     <h>hello</h>
-//   );
-// }
-
 export default App;
