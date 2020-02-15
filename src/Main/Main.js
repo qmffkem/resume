@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Outside from './Hover/Outside';
-import './Main.css';
+// import './Main.css';
 import About from './About/About';
 import Experiences from './Experiences/Experiences';
 import Skills from './Skills/Skills';
@@ -14,13 +14,9 @@ class Main extends Component{
 
   render(){
     return (
-      <div className='main'>
-        <Outside/>
+      <div>
         <About
           personalInfo = {Test.basics}
-        />
-        <Experiences
-          experiences = {Test.experiences}
         />
       </div>
     )

@@ -22,16 +22,16 @@ class About extends Component {
           <div className = 'pane' id = 'rightPane'>
             <div className = 'individual'>
               <img src={email} alt="email"/>
-              <div className = 'personal'>{this.info.email}</div>
+              <p className = 'personal'>{this.info.email}</p>
             </div>
             <div className = 'individual'>
               <img src={phone} alt="phone"/>
-              <div className = 'personal'>{this.info.phone}</div>
+              <p className = 'personal'>{this.info.phone}</p>
             </div>
             <div className = 'individual'>
               <img src={location} alt="location"/>
               {Object.entries(this.info.permanentAddress).map(([key, value]) =>
-                <div key = {key}>{value}</div>
+                <p key = {key}>{value}</p>
               )}
             </div>
           </div>
@@ -40,9 +40,9 @@ class About extends Component {
         <h2 id ='mainTitle'>
           About Me
         </h2>
-        <div>
+        <p>
           {this.info.summary}
-        </div>
+        </p>
       </div>
     );
   }
