@@ -18,6 +18,7 @@ class Main extends Component{
         <About
           personalInfo = {Test.basics}
         />
+        test
       </div>
     )
   }
