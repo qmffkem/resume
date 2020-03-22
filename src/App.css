@@ -1,5 +1,32 @@
 div {
-  text-align: center;
   display: flex;
   flex-direction: column;
+  text-align: center;
+}
+
+.title{
+  font-family: 'Exo 2', sans-serif;
+  font-weight: 200;
+}
+
+hr{
+  height: 1px;
+  width: 100%;
+}
+
+.hor {
+  flex-direction: row;
+}
+
+
+.orange {
+  background-color: orange;
+}
+
+.white {
+  color : white;
+}
+
+.bold {
+  font-weight: bold;
 }
