@@ -1,7 +1,17 @@
 .header {
-  /* text-align: center; */
+  background-color: white;
+  position: fixed;
+  top: 0px;
+  width:100%;
 }
-.space {
-  height : 8vh;
-  width : 960px;
+
+hr {
+  width : 40vw;
+}
+#space {
+  height: 10vh;
+}
+
+.shrink{
+  flex-direction: row;
 }

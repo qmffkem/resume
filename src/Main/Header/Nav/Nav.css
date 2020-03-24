@@ -1,6 +1,9 @@
-.hor{
-  display:flex;
+.nav {
+  text-align: center;
+  width: 20em;
 }
-.nav{
-  flex:1;
+
+.nav:hover {
+  color : orange;
+  font-weight: bold;
 }

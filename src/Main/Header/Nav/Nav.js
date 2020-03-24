@@ -5,7 +5,7 @@ class NavBar extends Component{
     this.props.onNavChange(event.target.textContent);
     console.log(event.target.textContent);
   }
-  
+
   render(){
     const navList = ["HOME", "EXPERIENCE", "ACTIVITY"];
     const list = navList.map((item, key) =>

@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import "./Home.css";
+import Timeline from "./Timeline/Timeline";
 
 class Home extends Component {
   constructor(props){
@@ -9,8 +10,8 @@ class Home extends Component {
 
   render(){
     return(
-      <div>
-        <div className = "orange box">
+      <div className = "home">
+        <div className = "orange box" id = "summary">
           <h2 className = "title white bold">
             WHO AM I
           </h2>
@@ -18,7 +19,29 @@ class Home extends Component {
             {this.about.summary}
           </p>
           <button>
+            Resume
           </button>
+        </div>
+        <div className = "gray box" id = "personal-info">
+          <h2 className = "title white bold">
+            Personal info
+          </h2>
+          <p className = "white">
+            {this.about.permanentAddress}
+          </p>
+        </div>
+        <div className = "gray box" id = "achievement">
+          <h2 className = "title white bold">
+            achievement
+          </h2>
+          <Timeline/>
+          {/* single line with the dots representing event*/}
+        </div>
+        <div className = "box" id = "skills">
+          <h2 className = "title bold">
+            Skills
+          </h2>
+          {/*bar chart using d3*/}
         </div>
       </div>
     );

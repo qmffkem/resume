@@ -15,13 +15,7 @@
       "countryCode": "US",
       "region": "Virginia"
     },
-    "permanentAddress": {
-      "address": "42648 Lancaster Ridge Terrace",
-      "postalCode": "VA 20152",
-      "city": "Chantilly",
-      "countryCode": "US",
-      "region": "Virginia"
-    },
+    "permanentAddress":"42648 Lancaster Ridge Terrace,Chantilly VA, 20152",
     "expected" : "2020-05"
   },
   "experiences" : [
@@ -47,9 +41,6 @@
         {"point" : "Designed a website for a 16th YGTLC (AKA Ygnite) held at Seattle"},
         {"point" : "Managed early boost on designing phase and easiness of knowledge transfer for the next year using Weebly"},
         {"point" : "Acquired agile building process by adapting improvements and communicating frequently to share up-to-date information within a team to deliver the best working product"}
-      ],
-      "highlights": [
-        "Started the company"
       ]
     },
     {
@@ -98,7 +89,9 @@
       "title": "Treasurer at Origami at VT",
       "startDate": "2019",
       "endDate": "2020",
-      "summary": ""
+      "summary": "",
+      "websites" : {
+      }
     },
     {
       "title": "Origami blog",
@@ -106,8 +99,8 @@
       "endDate": "2020",
       "summary": "Communicated and shared knowledge with other people from the blog and actively uploaded own origami designs and associated instructions",
       "websites" : {
-        "1" : "qmffkem.blog.me",
-        "2" : "jaeungjang.tistory.com"
+        "1" : "https://qmffkem.blog.me",
+        "2" : "https://jaeungjang.tistory.com"
       }
     },
     {
