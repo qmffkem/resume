@@ -1,52 +1,58 @@
-import React, {Component} from 'react';
-import "./Main.css";
+import React from 'react';
+
 import Header from "./Header/Header";
-import Resume from "./resume.json";
-import Home from "./Page/Home";
-import Experience from "./Page/Experience";
-import Activity from "./Page/Activity";
+import Body from "./Body/Body";
+// import Footer from "./Footer/Footer";
 
-class Main extends Component {
-  state = {
-    nav : ""
-  }
+// import Resume from "./Data/resume.json";
 
-  setNav = (nav) =>{
-    this.setState({
-      nav
-    })
-  }
+import AppBar from '@material-ui/core/AppBar';
 
-  render(){
-    const navClick = this.state.nav;
-    let nav;
-    var def = <Home resume = {Resume.basics}/>;
+import {  BrowserRouter as Router} from 'react-router-dom';
 
-
-    if(navClick === "HOME"){
-      nav = def;
-    }
-    else if(navClick === "EXPERIENCE"){
-      nav = <Experience exp = {Resume.experiences}/>;
-    }
-    else if(navClick === "ACTIVITY"){
-      nav = <Activity act = {Resume.activities}/>;
-    }
-    else {
-      nav = def;
-    }
-    return (
-      <div className = "main">
-        <Header
-          resume = {Resume.basics}
-          onNavChange = {this.setNav}
-        />
-        <div className = "content">
-          {nav}
-        </div>
-      </div>
-    );
-  }
+const Main = () => {
+    
+  return(
+    <>
+      <Router>
+        <AppBar position="static">
+          <Header/>
+        </AppBar>
+        <Body/>
+      </Router>
+    </>
+  )
 }
 
 export default Main;
+
+
+// const navClick = this.state.nav;
+// let nav;
+// var def = <Home resume = {Resume.basics}/>;
+
+
+// if(navClick === "HOME"){
+//   nav = def;
+// }
+// else if(navClick === "EXPERIENCE"){
+//   nav = <Experience exp = {Resume.experiences}/>;
+// }
+// else if(navClick === "ACTIVITY"){
+//   nav = <Activity act = {Resume.activities}/>;
+// }
+// else {
+//   nav = def;
+// }
+// return (
+//   <div className = "main">
+//     <Header
+//       resume = {Resume.basics}
+//       onNavChange = {this.setNav}
+//     />
+//     <div className = "content">
+//       {nav}
+//     </div>
+//   </div>
+// );
+// }
