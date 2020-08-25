@@ -11,10 +11,15 @@ import TimelineDot from '@material-ui/lab/TimelineDot';
 import Paper from '@material-ui/core/Paper';
 import { Typography } from '@material-ui/core';
 import FastfoodIcon from '@material-ui/icons/Fastfood';
+import data from '../../Data/resume.json';
 
-
+// what data do I need?
 
 const TimelineBio = ()=>{
+    // const school = data.education;
+    // const project = 
+
+
     return(
         <Timeline align="alternate">
             <TimelineItem>

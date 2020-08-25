@@ -1,14 +1,20 @@
 import React from "react";
 
 import Timeline from "../component/TimelineBio";
+import User from '../component/User';
+import About from '../component/About';
 
-
+import Paper from "@material-ui/core/Paper";
 const Home = ()=>{
 
   return(
     <>
       <p>Home</p>
       <Timeline/>
+      <Paper>
+        <User/>
+        <About/>
+      </Paper>
     </>
   )
 }
