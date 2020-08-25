@@ -10,11 +10,11 @@ const Home = ()=>{
   return(
     <>
       <p>Home</p>
-      <Timeline/>
       <Paper>
         <User/>
         <About/>
       </Paper>
+      <Timeline/>
     </>
   )
 }
