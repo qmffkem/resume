@@ -8,9 +8,9 @@ import Experience from './Page/Experience';
 const Body = () =>{
     return(
         <Switch>
-            <Route path="/" component={Home} exact/>
             <Route path="/experience" component={Experience}/>
             <Route path="/activity" component={Home}/>
+            <Route path="/" component={Home} />
         </Switch>
 
     )

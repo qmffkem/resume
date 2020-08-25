@@ -1,8 +1,17 @@
 import React from "react";
-// import "./Home.css";
-// import Timeline from "./Timeline/Timeline";
 
-const Home = ()=>(<p>home</p>)
+import Timeline from "../component/TimelineBio";
+
+
+const Home = ()=>{
+
+  return(
+    <>
+      <p>Home</p>
+      <Timeline/>
+    </>
+  )
+}
 
 // class Home extends Component {
 //   constructor(props){
