@@ -29,6 +29,7 @@ const Header = ()=>{
 
   const classes = useStyles();
 
+
   return(
     <>
       <Toolbar>
@@ -36,10 +37,13 @@ const Header = ()=>{
           News
         </Typography>
         <Navbar/>
+        {}
         <Button component ={Link} to ={"/login"} color="inherit">Login</Button>
-        <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+        <Button component ={Link} to ={"/logout"} color="inherit">Logout</Button>
+        <Button component ={Link} to ={"/create-account"} color="inherit">Create Account</Button>
+        {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
           <MenuIcon />
-        </IconButton>
+        </IconButton> */}
       </Toolbar>
     </>
   )
