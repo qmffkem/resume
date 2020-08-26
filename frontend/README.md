@@ -7,7 +7,8 @@ frontend:
     Material UI
     react-circular-bar
 backend:
-
+    Node.js
+    Express
 tools:
     Create React App
 

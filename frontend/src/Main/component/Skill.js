@@ -6,16 +6,19 @@ import { easeQuadInOut } from "d3-ease";
 import AnimatedProgressProvider from "./AnimatedProgressProvider";
 import { Typography } from '@material-ui/core';
 
-const Skill = ()=>{
-    const years = 3;
+const Skill = (props)=>{
+    const years = props.years;
+    const skillName = props.skillName;
+
+    // const years = 3;
     return(
         <>
             <AnimatedProgressProvider
                 valueStart={0}
                 valueEnd={years}
-                duration={2}
+                duration={years}
                 easingFunction={easeQuadInOut}
-                >
+                > 
                 {value => {
                     const roundedValue = Math.round(value);
                     return (
@@ -25,13 +28,16 @@ const Skill = ()=>{
                         text={`${roundedValue}yrs`}
                         /* This is important to include, because if you're fully managing the
                         animation yourself, you'll want to disable the CSS animation. */
-                        styles={buildStyles({ pathTransition: "none" })}
+                        styles={buildStyles({ 
+                            pathTransition: "none",
+                            strokeLinecap: "butt" 
+                        })}
                         />
                         );
                     }}
             </AnimatedProgressProvider>
             <Typography>
-                Skill name
+                {skillName}
             </Typography>
         </>
     )
