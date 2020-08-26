@@ -5,6 +5,7 @@ frontend:
     React.js
     react-router
     Material UI
+    react-circular-bar
 backend:
 
 tools:

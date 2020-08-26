@@ -17,7 +17,12 @@ const Form = (props)=>{
     else if(props.types === "createAccount"){
         return(
             <Paper>
-                <p>create Account</p>
+                <TextField id="standard-basic" label = "First Name"/>
+                <TextField id="standard-basic" label = "Last Name"/>
+                <TextField id="standard-basic" label = "username"/>
+                <TextField id="standard-basic" label = "password"/>
+
+                <Button>Create Account</Button>
             </Paper>
         )
     }

@@ -6,7 +6,7 @@ import Experience from './Pages/ExperiencePage';
 
 import Login from './Pages/LoginPages/LoginPage';
 import Logout from './Pages/LoginPages/LogoutPage';
-import CreateAccount from './Pages/LoginPages/CreateAccount';
+import CreateAccount from './Pages/LoginPages/CreateAccountPage';
 // import Activity from './Page/Activity';
 
 const Body = () =>{

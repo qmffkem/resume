@@ -3,6 +3,7 @@ import React from "react";
 import Timeline from "../../component/TimelineBio";
 import User from '../../component/User';
 import About from '../../component/About';
+import Skills from '../../component/Skills';
 
 import Paper from "@material-ui/core/Paper";
 const Home = ()=>{
@@ -14,7 +15,10 @@ const Home = ()=>{
         <User/>
         <About/>
       </Paper>
-      <Timeline/>
+      <Paper>
+        <Timeline/>
+        <Skills/>
+      </Paper>
     </>
   )
 }
