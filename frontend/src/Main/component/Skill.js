@@ -26,7 +26,7 @@ const Skill = (props)=>{
             <AnimatedProgressProvider
                 valueStart={0}
                 valueEnd={years}
-                duration={years}
+                duration={years/2}
                 easingFunction={easeQuadInOut}
                 > 
                 {value => {
@@ -40,7 +40,7 @@ const Skill = (props)=>{
                         animation yourself, you'll want to disable the CSS animation. */
                         styles={buildStyles({ 
                             pathTransition: "none",
-                            strokeLinecap: "butt" 
+                            // strokeLinecap: "butt" 
                         })}
                         />
                         );

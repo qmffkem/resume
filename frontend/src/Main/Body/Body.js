@@ -19,8 +19,8 @@ const Body = () =>{
                 <Route path="/logout" component = {Logout}/>
                 <Route path="/create-account" component = {CreateAccount}/>
                 
-                <Route path="/experience" component={Experience}/>
-                <Route path="/activity" component={Home}/>
+                {/* <Route path="/experience" component={Experience}/>
+                <Route path="/activity" component={Home}/> */}
                 <Route path="/" component={Home} />
 
             </Switch>
