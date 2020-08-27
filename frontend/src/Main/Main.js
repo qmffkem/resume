@@ -1,22 +1,22 @@
 import React from 'react';
+import {  BrowserRouter as Router} from 'react-router-dom';
 
 import Header from "./Header/Header";
 import Body from "./Body/Body";
-// import Footer from "./Footer/Footer";
 
-// import Resume from "./Data/resume.json";
+import CssBaseline from '@material-ui/core/CssBaseline';
 
 import AppBar from '@material-ui/core/AppBar';
 
-import {  BrowserRouter as Router} from 'react-router-dom';
 
 const Main = () => {
     
   return(
     <>
+      <CssBaseline />
       <Router>
         <AppBar position="static">
-          <Header/>
+            <Header/>
         </AppBar>
         <Body/>
       </Router>

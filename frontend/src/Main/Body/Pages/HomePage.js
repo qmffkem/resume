@@ -5,20 +5,44 @@ import User from '../../component/User';
 import About from '../../component/About';
 import Skills from '../../component/Skills';
 
-import Paper from "@material-ui/core/Paper";
+import {Paper,Grid} from "@material-ui/core";
+import {makeStyles} from "@material-ui/core/styles";
+
+
+const useStyles = makeStyles({
+  root: {
+    marginTop: 10
+  },
+  child:{
+    marginTop:10
+  }
+})
+
 const Home = ()=>{
+
+  const classes = useStyles();
 
   return(
     <>
-      <p>Home</p>
-      <Paper>
-        <User/>
-        <About/>
-      </Paper>
-      <Paper>
-        <Timeline/>
-        <Skills/>
-      </Paper>
+      {/* <p>Home</p> */}
+      <Grid container spacing = {2}>
+        <Grid item xs = {3}>
+          <Grid direction = "column" className = {classes.child}>
+            <User/>
+          </Grid>
+        </Grid>
+        <Grid item xs = {9}>
+          <Grid direction = "column" className = {classes.child}>
+            <About/>
+          </Grid>
+          <Grid direction = "column" className = {classes.child}>
+            <Skills/>
+          </Grid>
+        </Grid>
+      </Grid>
+      {/* <Paper>
+      <Timeline/>
+      </Paper> */}
     </>
   )
 }

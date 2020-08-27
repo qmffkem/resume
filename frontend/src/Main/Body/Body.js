@@ -1,6 +1,8 @@
 import React from 'react';
 import{Route, Switch} from 'react-router-dom';
 
+import {Container} from "@material-ui/core";
+
 import Home from './Pages/HomePage';
 import Experience from './Pages/ExperiencePage';
 
@@ -11,17 +13,18 @@ import CreateAccount from './Pages/LoginPages/CreateAccountPage';
 
 const Body = () =>{
     return(
-        <Switch>
-            <Route path="/login" component = {Login}/>
-            <Route path="/logout" component = {Logout}/>
-            <Route path="/create-account" component = {CreateAccount}/>
-            
-            <Route path="/experience" component={Experience}/>
-            <Route path="/activity" component={Home}/>
-            <Route path="/" component={Home} />
+        <Container>
+            <Switch>
+                <Route path="/login" component = {Login}/>
+                <Route path="/logout" component = {Logout}/>
+                <Route path="/create-account" component = {CreateAccount}/>
+                
+                <Route path="/experience" component={Experience}/>
+                <Route path="/activity" component={Home}/>
+                <Route path="/" component={Home} />
 
-        </Switch>
-
+            </Switch>
+        </Container>
     )
 }
 
