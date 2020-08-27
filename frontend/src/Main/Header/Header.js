@@ -34,7 +34,7 @@ const Header = ()=>{
     <>
       <Toolbar>
         <Typography variant="h6" className={classes.title}>
-          News
+          Resume
         </Typography>
         <Navbar/>
         {}
