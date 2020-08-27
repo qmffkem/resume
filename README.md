@@ -3,7 +3,8 @@ This is a resume website for Jaeung Jang, and this project was bootstrapped with
 The deployed website can be found at "https://qmffkem.github.io/resume/",
 with the instruction from "https://github.com/gitname/react-gh-pages".
 
-technologies used for this website:  
+technologies used for this website:
+
 frontend:  
 ```
     React.js  
