@@ -22,7 +22,7 @@ const NavBar = ()=>{
   return(
       <div className = {classes.root}>
         <Tabs value = {value} onChange = {(event,newValue)=>{setValue(newValue)}}>
-          <Tab value = {0} label = "HOME" component = {Link} to ="/"/>
+          <Tab value = {0} label = "HOME" component = {Link} to ={process.env.PUBLIC_URL + "/"}/>
           {/* <Tab value = {1} label = "EXPERIENCE" component = {Link} to ="/experience"/>
           <Tab value = {2} label = "ACTIVITY" component = {Link} to ="/activity"/> */}
         </Tabs>
