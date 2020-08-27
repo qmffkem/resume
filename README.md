@@ -5,13 +5,18 @@ with the instruction from "https://github.com/gitname/react-gh-pages".
 
 technologies used for this website:  
 frontend:  
+```
     React.js  
     react-router  
     Material UI  
     react-circular-bar  
+```
 backend:  
+```
     Node.js  
     Express  
+```
 tools:  
+```
     Create React App  
-
+```
