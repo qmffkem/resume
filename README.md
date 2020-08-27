@@ -21,3 +21,11 @@ tools:
 ```
     Create React App  
 ```
+
+```
+problems:  
+When the deployed website on github page routes back to homepage,
+it directs to ".../", not under current repository(".../resume").  
+solution:  
+https://github.com/facebook/create-react-app/issues/1765
+```
