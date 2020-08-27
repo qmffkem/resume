@@ -15,13 +15,13 @@ const Body = () =>{
     return(
         <Container>
             <Switch>
-                <Route path="/login" component = {Login}/>
-                <Route path="/logout" component = {Logout}/>
-                <Route path="/create-account" component = {CreateAccount}/>
+                <Route path={process.env.PUBLIC_URL + "/login"} component = {Login}/>
+                <Route path={process.env.PUBLIC_URL + "/logout"} component = {Logout}/>
+                <Route path={process.env.PUBLIC_URL + "/create-account"} component = {CreateAccount}/>
                 
                 {/* <Route path="/experience" component={Experience}/>
                 <Route path="/activity" component={Home}/> */}
-                <Route path="/" component={Home} />
+                <Route path={process.env.PUBLIC_URL + "/"} component={Home} />
 
             </Switch>
         </Container>
