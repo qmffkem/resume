@@ -4,7 +4,7 @@ import{Route, Switch} from 'react-router-dom';
 import {Container} from "@material-ui/core";
 
 import Home from './Pages/HomePage';
-import Experience from './Pages/ExperiencePage';
+// import Experience from './Pages/ExperiencePage';
 
 import Login from './Pages/LoginPages/LoginPage';
 import Logout from './Pages/LoginPages/LogoutPage';

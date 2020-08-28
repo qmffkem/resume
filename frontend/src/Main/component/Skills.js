@@ -14,15 +14,6 @@ const Skills = (props)=>{
     const classes = useStyles();
     
     const skills = props.skillInfo;
-    console.log(skills);
-    skills.map((each)=>{
-        console.log(each)
-    })
-    const skillSets = {
-        react: 3,
-        Java: 2,
-        Javascript:3
-    }
 
     return(
         <Paper elevation={3} className = {classes.root}>
