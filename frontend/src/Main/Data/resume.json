@@ -2,19 +2,13 @@
   "basics": {
     "name": "Jaeung Jang",
     "role": "Programmer",
-    "picture": "",
+    "picture": "frontend/src/images/email.png",
     "email": "jaeung@vt.edu",
     "phone": "(339) 223-3721",
     "website": "linkedin.com/in/jaeung-jang",
     "summary": "I want to know everything about what is happeing on this world",
     "objective": "Senior year computer science student at Virginia Tech. Seeking to leverage creative thinking and strong design implementation skills to ensure the functionalities of the product on time.",
-    "localAddress": {
-      "address": "1400 F Seneca Drive",
-      "postalCode": "VA 24060",
-      "city": "Blacksburg",
-      "countryCode": "US",
-      "region": "Virginia"
-    },
+    "localAddress": "",
     "permanentAddress":"42648 Lancaster Ridge Terrace,Chantilly VA, 20152",
     "expected" : "2020-05"
   },
@@ -164,15 +158,15 @@
   "skills": [
     {
       "name": "React",
-      "startYear": "2018"
+      "year": 3
     },
     {
       "name": "Java",
-      "startYear": "2018"
+      "year": 4
     },
     {
       "name": "Python",
-      "startYear": "2018"
+      "year": 2
     }
   ],
   "languages": [

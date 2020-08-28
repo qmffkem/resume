@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import Paper from "@material-ui/core/Paper";
 import Typography from '@material-ui/core/Typography';
@@ -15,7 +15,8 @@ const useStyles = makeStyles((theme) =>({
           margin: theme.spacing(1),
         },
         alignItems: "center",
-        paddingTop:40
+        paddingTop:40,
+        paddingBottom:40
       },
     large: {
         width: theme.spacing(20),
@@ -23,23 +24,23 @@ const useStyles = makeStyles((theme) =>({
       }
 }));
 
-const User = ()=>{
+const User = (props)=>{
     const classes = useStyles();
-
+    const userInfo = props.userInfo;
 
 
     return(
         <Paper elevation = {3} className = {classes.root}>
             <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" className={classes.large} />
             <Typography variant="h5" component="h2">
-                Name
+                {userInfo.name}
             </Typography>
             <Typography color="textSecondary">
-                Role
+                {userInfo.role}
             </Typography>
-            <Typography variant="body2" component="p">
+            {/* <Typography variant="body2" component="p">
                 icons for phone and related sources...
-            </Typography>
+            </Typography> */}
         </Paper>
     )
 }

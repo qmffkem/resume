@@ -1,18 +1,19 @@
 import React from "react";
 
-import Timeline from "../../component/TimelineBio";
+// import Timeline from "../../component/TimelineBio";
 import User from '../../component/User';
 import About from '../../component/About';
 import Skills from '../../component/Skills';
 import Experience from '../../component/Experience';
 
-import {Paper,Grid} from "@material-ui/core";
+import {Grid} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
 
+import Data from '../../Data/resume.json';
 
 const useStyles = makeStyles({
   root: {
-    marginTop: 10
+    flexWrap: "wrap"
   },
   child:{
     marginTop:20
@@ -26,18 +27,18 @@ const Home = ()=>{
   return(
     <>
       {/* <p>Home</p> */}
-      <Grid container spacing = {2}>
-        <Grid container direction = "column" item xs = {3}>
+      <Grid container spacing = {2} className = {classes.root}>
+        <Grid container direction = "column" item md = {3} xs = {12}>
           <Grid className = {classes.child}>
-            <User/>
+            <User userInfo = {Data.basics}/>
           </Grid>
         </Grid>
-        <Grid container direction ="column" item xs = {9}>
+        <Grid container direction ="column" item md = {9} xs = {12}>
           <Grid className = {classes.child}>
-            <About/>
+            <About userInfo = {Data.basics}/>
           </Grid>
           <Grid className = {classes.child}>
-            <Skills/>
+            <Skills skillInfo = {Data.skills}/>
           </Grid>
           <Grid className = {classes.child}>
             <Experience/>

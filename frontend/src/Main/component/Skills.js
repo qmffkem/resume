@@ -10,9 +10,14 @@ const useStyles = makeStyles({
         padding:40
     }
 })
-const Skills = ()=>{
+const Skills = (props)=>{
     const classes = useStyles();
     
+    const skills = props.skillInfo;
+    console.log(skills);
+    skills.map((each)=>{
+        console.log(each)
+    })
     const skillSets = {
         react: 3,
         Java: 2,
@@ -22,10 +27,10 @@ const Skills = ()=>{
     return(
         <Paper elevation={3} className = {classes.root}>
             <Grid container spacing = {10}>
-                {Object.entries(skillSets).map(([skill, year], key)=>{
+                {skills.map( (skill,key)=>{
                     return(
                         <Grid item xs key = {key}>
-                            <Skill years = {year} skillName = {skill}/>
+                            <Skill years = {skill.year} skillName = {skill.name}/>
                         </Grid>
                     )
                 })}

@@ -10,28 +10,40 @@ import Divider from '@material-ui/core/Divider';
 
 import { Typography } from '@material-ui/core';
 
-import InboxIcon from '@material-ui/icons/Inbox';
+import MyLocationIcon from '@material-ui/icons/MyLocation';
+import DoneIcon from '@material-ui/icons/Done';
+import SmartphoneIcon from '@material-ui/icons/Smartphone';
 
+const About = (props)=>{
+    const userInfo = props.userInfo;
 
-const About = ()=>{
     return(
         <Paper elevation ={3}>
             <List>
                 <ListItem>
                     <ListItemAvatar>
-                        <InboxIcon />
+                        <DoneIcon />
                     </ListItemAvatar>
                     <Typography>
-                        objective
+                        {userInfo.objective}
                     </Typography>
                 </ListItem>
                 <Divider variant="inset" component="li" />
                 <ListItem>
                     <ListItemAvatar>
-                        <InboxIcon />
+                        <MyLocationIcon />
                     </ListItemAvatar>
                     <Typography>
-                        location
+                        {userInfo.permanentAddress}
+                    </Typography>
+                </ListItem>
+                <Divider variant="inset" component="li" />
+                <ListItem>
+                    <ListItemAvatar>
+                        <SmartphoneIcon />
+                    </ListItemAvatar>
+                    <Typography>
+                        {userInfo.phone}
                     </Typography>
                 </ListItem>
             </List>
