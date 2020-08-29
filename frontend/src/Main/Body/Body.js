@@ -4,7 +4,7 @@ import{Route, Switch} from 'react-router-dom';
 import {Container} from "@material-ui/core";
 
 import Home from './Pages/HomePage';
-// import Experience from './Pages/ExperiencePage';
+import ExperiencePage from './Pages/ExperiencePage';
 
 import Login from './Pages/LoginPages/LoginPage';
 import Logout from './Pages/LoginPages/LogoutPage';
@@ -19,8 +19,8 @@ const Body = () =>{
                 <Route path={process.env.PUBLIC_URL + "/logout"} component = {Logout}/>
                 <Route path={process.env.PUBLIC_URL + "/create-account"} component = {CreateAccount}/>
                 
-                {/* <Route path="/experience" component={Experience}/>
-                <Route path="/activity" component={Home}/> */}
+                <Route path={process.env.PUBLIC_URL + "/pages/:projectName"} component={ExperiencePage}/>
+                {/* <Route path="/activity" component={Home}/> */}
                 <Route path={process.env.PUBLIC_URL + "/"} component={Home} />
 
             </Switch>

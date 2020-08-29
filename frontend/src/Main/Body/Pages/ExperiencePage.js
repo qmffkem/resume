@@ -1,7 +1,11 @@
 import React from 'react';
 import "./Experience.css";
 
-const Experience = ()=>(<p>experience</p>)
+const Experience = ({match})=>{
+    return(
+        <p>{match.params.projectName}</p>
+    )
+}
 
 // class Experience extends Component{
 //   constructor(props){
