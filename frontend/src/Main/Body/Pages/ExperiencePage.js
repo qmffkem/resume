@@ -1,9 +1,14 @@
 import React from 'react';
 import "./Experience.css";
+import CovidMap from "../../component/projects/covidCases";
 
 const Experience = ({match})=>{
     return(
-        <p>{match.params.projectName}</p>
+        <>
+            <p>{match.params.projectName}</p>
+            <CovidMap/>
+        </>
+
     )
 }
 

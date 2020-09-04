@@ -3,7 +3,7 @@ import React from 'react';
 import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import { easeQuadInOut } from "d3-ease";
-import AnimatedProgressProvider from "./AnimatedProgressProvider";
+import AnimatedProgressProvider from "../AnimatedProgressProvider";
 import { Typography, makeStyles } from '@material-ui/core';
 
 const useStyles = makeStyles({

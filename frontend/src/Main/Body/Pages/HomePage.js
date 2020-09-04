@@ -3,8 +3,8 @@ import React from "react";
 // import Timeline from "../../component/TimelineBio";
 import User from '../../component/User';
 import About from '../../component/About';
-import Skills from '../../component/Skills';
-import Experience from '../../component/Experience';
+import Skills from '../../component/skills/SkillList';
+import ExperienceList from '../../component/experiences/ExperienceList';
 
 import {Grid} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
@@ -41,7 +41,7 @@ const Home = ()=>{
             <Skills skillInfo = {Data.skills}/>
           </Grid>
           <Grid className = {classes.child}>
-            <Experience/>
+            <ExperienceList experiences = {Data.experiences}/>
           </Grid>
         </Grid>
       </Grid>
