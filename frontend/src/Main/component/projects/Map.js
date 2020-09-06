@@ -5,7 +5,7 @@ import * as topojson from 'topojson'
 
 const Map = (props)=>{
 
-    const {mapData,coronaData,date,setDate,type,setType,setLoading} = props;
+    const {mapData,coronaData,date,setDate,type,setType} = props;
     const [yesterday,setYesterday] = useState("")
 
     // hooks  -----------------------------------------------
