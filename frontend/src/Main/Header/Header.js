@@ -37,9 +37,9 @@ const Header = ()=>{
           Resume
         </Typography>
         <Navbar/>
-        <Button component ={Link} to ={process.env.PUBLIC_URL + "/login"} color="inherit">Login</Button>
+        {/* <Button component ={Link} to ={process.env.PUBLIC_URL + "/login"} color="inherit">Login</Button>
         <Button component ={Link} to ={process.env.PUBLIC_URL + "/logout"} color="inherit">Logout</Button>
-        <Button component ={Link} to ={process.env.PUBLIC_URL + "/create-account"} color="inherit">Create Account</Button>
+        <Button component ={Link} to ={process.env.PUBLIC_URL + "/create-account"} color="inherit">Create Account</Button> */}
         {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
           <MenuIcon />
         </IconButton> */}
