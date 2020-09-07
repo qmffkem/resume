@@ -2,17 +2,57 @@
   "basics": {
     "name": "Jaeung Jang",
     "role": "Programmer",
-    "picture": "frontend/src/images/email.png",
     "email": "jaeung@vt.edu",
     "phone": "(339) 223-3721",
     "website": "linkedin.com/in/jaeung-jang",
     "summary": "I want to know everything about what is happeing on this world",
-    "objective": "Senior year computer science student at Virginia Tech. Seeking to leverage creative thinking and strong design implementation skills to ensure the functionalities of the product on time.",
+    "objective": "Recently graduated from Virginia Tech with a degree in Computer Science. An intuitive worker who is seeking to leverage creative ideas and strong design implementation skills to fill the software developer role.",
     "localAddress": "",
     "permanentAddress":"42648 Lancaster Ridge Terrace,Chantilly VA, 20152",
     "expected" : "2020-05"
   },
   "experiences" : [
+    {
+      "company": "KSEA",
+      "title": "Web developer for Ygnite (YGTLC) 2020 & 2021, KSEA",
+      "startDate": "2019-05",
+      "endDate": "Current",
+      "course" : "Intro GUI Programming/Graphics",
+      "summary": [
+        {"point" : "Built an interactive map showing housing affordability index of different counties in VA and a line graph showing the changes of the indexes of a chosen county over time using D3 for data visualization and React for user interfaces"},
+        {"point" : "Implemented selection box for rendering county data and sliders for limiting what data to visualize"},
+        {"point" : "Acquired data synchronization between map and the graph through the usage of state and props; setState is triggered by clicking a county on the map which populates selected county data to the graph"}
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "company": "Independent",
+      "title": "Full stack website",
+      "startDate": "2020-05",
+      "endDate": "Current",
+      "course" : "",
+      "summary": [
+        {"point" : "Designed a single page application using React which renders different components using React Router"},
+        {"point" : "Implemented add and get article information functions from a server"},
+        {"point" : "Incorporated MongoDB to keep track of article information"},
+        {"point" : "• Future implementation includes managing pages based on user"}
+      ]
+    },
+    {
+      "company": "Virginia Tech",
+      "title": "Shaux",
+      "startDate": "2020-01",
+      "endDate": "2020-05",
+      "course" : "CS 4704 Software Engineering Capstone",
+      "summary": [
+        {"point" : "Built a collaborative music selection app to promote seamless experience at events by allowing guests to suggest and vote on songs using Android Studio"},
+        {"point" : "Incorporated with Spotify API for major music functionalities include retrieving music data and playing/pausing songs"},
+        {"point" : "Managed User’s data and their participated events history along with firing appropriate messages to the user through Firebase"},
+        {"point" : "Conducted design and code review every 2 days to improve performance and UX"},
+        {"point" : "Shared project file and kept track of updates with team members using GitHub"}
+      ]
+    },
     {
       "company": "Virginia Tech",
       "title": "Coordinated Multiple Views",
@@ -23,18 +63,6 @@
         {"point" : "Built an interactive map showing housing affordability index of different counties in VA and a line graph showing the changes of the indexes of a chosen county over time using D3 for data visualization and React for user interfaces"},
         {"point" : "Implemented selection box for rendering county data and sliders for limiting what data to visualize"},
         {"point" : "Acquired data synchronization between map and the graph through the usage of state and props; setState is triggered by clicking a county on the map which populates selected county data to the graph"}
-      ]
-    },
-    {
-      "company": "KSEA",
-      "title": "Young Generation Technical and Leadership Confeernce 2020 Website",
-      "startDate": "2019-05",
-      "endDate": "2020-01",
-      "course" : "",
-      "summary": [
-        {"point" : "Designed a website for a 16th YGTLC (AKA Ygnite) held at Seattle"},
-        {"point" : "Managed early boost on designing phase and easiness of knowledge transfer for the next year using Weebly"},
-        {"point" : "Acquired agile building process by adapting improvements and communicating frequently to share up-to-date information within a team to deliver the best working product"}
       ]
     },
     {

@@ -3,13 +3,19 @@ import "./Experience.css";
 import CovidMap from "../../component/projects/covidCases";
 
 const Experience = ({match})=>{
-    return(
-        <>
+    if(match.params.projectName === "Coordinated Multiple Views"){
+        return(
+            <>
+                <p>{match.params.projectName}</p>
+                <CovidMap/>
+            </>
+        )
+    }
+    else{
+        return(
             <p>{match.params.projectName}</p>
-            <CovidMap/>
-        </>
-
-    )
+        )
+    }
 }
 
 // class Experience extends Component{

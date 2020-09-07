@@ -40,8 +40,13 @@ const Home = ()=>{
           <Grid className = {classes.child}>
             <Skills skillInfo = {Data.skills}/>
           </Grid>
+          {/* For the experiences */}
           <Grid className = {classes.child}>
             <ExperienceList experiences = {Data.experiences}/>
+          </Grid>
+          {/* For the projects */}
+          <Grid className = {classes.child}>
+            <ExperienceList experiences = {Data.projects}/>
           </Grid>
         </Grid>
       </Grid>
