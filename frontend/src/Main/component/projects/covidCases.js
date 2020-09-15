@@ -3,9 +3,27 @@ import * as d3 from "d3";
 import Map from './Map';
 import Chart from './Chart';
 
+import Paper from "@material-ui/core/Paper";
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "flex-Start",
+    flexWrap: "wrap",
+  },
+  content: {
+    margin: "1em",
+    flexGrow:"1"
+  }
+}));
+
 const virginiaMapDataURL = "https://raw.githubusercontent.com/deldersveld/topojson/master/countries/us-states/VA-51-virginia-counties.json";
 const coronaVirginiaDatasetURL = "https://data.virginia.gov/resource/bre9-aqqr.json";
 const CovidCases = () => {
+  const classes = useStyles();
+
   const [loading, setLoading] = useState(true);
   const [mapData, setMapData] = useState("");
   const [coronaData, setCoronaData] = useState("");
@@ -16,23 +34,15 @@ const CovidCases = () => {
 
   useEffect(() => {
     if (loading) {
-      //set loading be true after getting data
-      // setTimeout(() => {
       d3.json(virginiaMapDataURL).then((mapData) => {
         d3.json(coronaVirginiaDatasetURL).then((coronaData) => {
           setMapData(mapData);
-          // console.log("t")
           setCoronaData(coronaData);
           setType("deaths");
-          // setTimeout(() => {
-          //   console.log("a")
           setCounty(mapData.objects.cb_2015_virginia_county_20m.geometries[0].properties.GEOID)
-          // }, 5000);
-          // console.log("e")
           setLoading(false);
         })
       });
-      // }, 5000)
     }
   }, [loading]);
 
@@ -42,24 +52,26 @@ const CovidCases = () => {
         loading ? (
           <p>loading...</p>
         ) : (
-            // <div style={{display:"flex", justifyContent:"center"}}>
-            <div>
-              {/* <p>done loading</p> */}
-              <Map
-                mapData={mapData}
-                coronaData={coronaData}
-                date={date}
-                setDate={setDate}
-                type={type}
-                setType={setType}
-                setLoading={setLoading}
-                setCounty={setCounty}
-              />
-              <Chart
-                coronaData={coronaData}
-                county={county}
-                type={type}
-              />
+            <div className={classes.root}>
+              <Paper elevation={3} className={classes.content}>
+                <Map
+                  mapData={mapData}
+                  coronaData={coronaData}
+                  date={date}
+                  setDate={setDate}
+                  type={type}
+                  setType={setType}
+                  setLoading={setLoading}
+                  setCounty={setCounty}
+                />
+              </Paper>
+              <Paper elevation={3} className={classes.content}>
+                <Chart
+                  coronaData={coronaData}
+                  county={county}
+                  type={type}
+                />
+              </Paper>
             </div>
           )
       }

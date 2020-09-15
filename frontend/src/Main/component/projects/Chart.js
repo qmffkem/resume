@@ -1,11 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import * as d3 from "d3";
-import { tickStep } from 'd3';
 
 const Chart = (props) => {
-    const [width, height] = [1920, 1080];
+    const [width, height] = [512, 288];
     const { coronaData, county, type } = props;
-    const [max,setMax] = useState(1000)
+    const [max, setMax] = useState(1000)
     // hooks  -----------------------------------------------
 
     //similar to componentdidMount, as it does not run except the initial render.
@@ -17,7 +16,7 @@ const Chart = (props) => {
     useEffect(() => {
         loadaxis();
         updateData();
-    }, [county, max]);
+    }, [county, max, type]);
 
     // components  ---------------------------------------------
 
@@ -38,7 +37,7 @@ const Chart = (props) => {
     function loadplane() {
 
         d3.select(".chart-wrapper")
-            .style("padding", "2em")
+            .style("padding", "4em")
 
         // Add the svg element to the HVChart.
         d3.select("#chart")
@@ -67,7 +66,7 @@ const Chart = (props) => {
 
         // Y scale will use the percentage data
         var yScale = d3.scaleLinear()
-            .domain([0, max]) // input
+            .domain([0, Math.ceil(max / 10) * 10]) // input
             .range([height, 0]); // output
 
 
@@ -85,7 +84,7 @@ const Chart = (props) => {
         svg.append("g")
             .attr("class", "yaxis")
             .attr("transform", `translate(${width}, 0)`)
-            .call(d3.axisRight(yScale).tickValues(d3.range(0, max, 100))); // Create an axis component with d3.axisLeft
+            .call(d3.axisRight(yScale).tickValues(d3.range(0, Math.ceil(max / 10) * 11, Math.ceil(max / 10)))); // Create an axis component with d3.axisLeft
 
         svg
             .select(".xaxis")
@@ -140,7 +139,7 @@ const Chart = (props) => {
             .range([width, 0]); // output
         // Y scale will use the percentage data
         var yScale = d3.scaleLinear()
-            .domain([0, max]) // input
+            .domain([0, Math.ceil(max / 10) * 10]) // input
             .range([height, 0]); // output
 
         // Create d3's line generator.
@@ -160,7 +159,7 @@ const Chart = (props) => {
             .classed("line", true)
             .attr("d", line)
             .style("fill", "none")
-            .style("stroke-width", 3)
+            .style("stroke-width", 2)
             .style("stroke", "ffab00");
     }
 
@@ -182,7 +181,7 @@ const Chart = (props) => {
     // return   --------------------------------------------------
     //basic structure of the components.
     return (
-        <div className="coronaChart" style={{ textAlign: "center", backgroundColor: "green" }}>
+        <div className="coronaChart" style={{ textAlign: "center"}}>
             <h2 className="caption">
                 where caption will be
             </h2>

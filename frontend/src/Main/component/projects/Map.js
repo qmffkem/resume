@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import * as d3 from 'd3';
 import * as topojson from 'topojson';
-import { sliderBottom } from 'd3-simple-slider';
+// import { sliderBottom } from 'd3-simple-slider';
 
 
 const Map = (props) => {
@@ -274,7 +274,7 @@ const Map = (props) => {
     // return   --------------------------------------------------
     //basic structure of the components.
     return (
-        <div className="coronaMap" style={{ textAlign: "center" ,backgroundColor:"yellow"}}>
+        <div className="coronaMap" style={{ textAlign: "center"}}>
             <h2 className="caption">
                 where caption will be
             </h2>
