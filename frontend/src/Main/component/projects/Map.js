@@ -18,10 +18,12 @@ const Map = (props) => {
         loadTooltip();
         loadMapData(0.5);
         // loadSlider();
+        //eslint-disable-next-line
     }, []);
 
     useEffect(() => {
         updateCaseData();
+        //eslint-disable-next-line
     }, [date, type, yesterday]);
 
     // components  ---------------------------------------------
@@ -201,7 +203,7 @@ const Map = (props) => {
 
         //updated values from the day before
         //daily updated values
-        currentData.map((data, index) => {
+        currentData.forEach((data, index) => {
             let value;
             let currentCounty = d3
                 .select("svg")
@@ -274,7 +276,7 @@ const Map = (props) => {
     // return   --------------------------------------------------
     //basic structure of the components.
     return (
-        <div className="coronaMap" style={{ textAlign: "center"}}>
+        <div className="coronaMap" style={{ textAlign: "center" }}>
             <h2 className="caption">
                 where caption will be
             </h2>

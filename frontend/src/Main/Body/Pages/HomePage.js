@@ -4,7 +4,7 @@ import React from "react";
 import User from '../../component/User';
 import About from '../../component/About';
 import Skills from '../../component/skills/SkillList';
-import ExperienceList from '../../component/experiences/ExperienceList';
+import ListItems from '../../component/experiences/ListItems';
 
 import {Grid} from "@material-ui/core";
 import {makeStyles} from "@material-ui/core/styles";
@@ -42,11 +42,11 @@ const Home = ()=>{
           </Grid>
           {/* For the experiences */}
           <Grid className = {classes.child}>
-            <ExperienceList experiences = {Data.experiences}/>
+            <ListItems items = {Data.experiences} title = {"Experience"}/>
           </Grid>
           {/* For the projects */}
           <Grid className = {classes.child}>
-            <ExperienceList experiences = {Data.projects}/>
+            <ListItems items = {Data.projects} title = {"Project"}/>
           </Grid>
         </Grid>
       </Grid>

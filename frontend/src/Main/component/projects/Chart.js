@@ -11,11 +11,13 @@ const Chart = (props) => {
     useEffect(() => {
         setCaptions();
         loadplane();
-    }, []);
+    //eslint-disable-next-line
+    },[]);
 
     useEffect(() => {
         loadaxis();
         updateData();
+    //eslint-disable-next-line
     }, [county, max, type]);
 
     // components  ---------------------------------------------
@@ -90,7 +92,7 @@ const Chart = (props) => {
             .select(".xaxis")
             .selectAll("text")
             .text((index) => {
-                const [year, month, date, time] = getAvailableDates()[index].split(/-|T/);
+                const [year, month, date] = getAvailableDates()[index].split(/-|T/);
                 return (`${month}/${date}/${year}`)
             })
         // .style("transform", "rotate(10deg)")

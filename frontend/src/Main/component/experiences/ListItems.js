@@ -2,27 +2,27 @@ import React from 'react';
 
 import {Typography, List, Paper, makeStyles} from "@material-ui/core";
 
-import Experience from './Experience';
+import Item from './Item';
 
 const useStyles = makeStyles({
-    experiences:{
+    item:{
         padding:'20px'
     },
 })
 
 const ExperienceList = (props)=>{
     const classes = useStyles();
-    const experiences = props.experiences;
+    const {items, title} = props;
 
     return(
-        <Paper elevation ={3} className = {classes.experiences}>
+        <Paper elevation ={3} className = {classes.item}>
             <Typography variant = "h5">
-                Experiences
+                {title}
             </Typography>
             <List>
-                {experiences.map((experience, key)=>{
+                {items.map((item, key)=>{
                     return(
-                        <Experience experience = {experience} key = {key}/>
+                        <Item item = {item} key = {key}/>
                     )
                 })}
             </List>

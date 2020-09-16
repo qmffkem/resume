@@ -17,7 +17,7 @@ const useStyles = makeStyles({
 const Experience = (props)=>{
     const classes = useStyles();
     
-    var {title, course, startDate,endDate, summary} = props.experience;
+    var {title, course, startDate,endDate, summary} = props.item;
 
     var date = "";
     if(course !== ""){
